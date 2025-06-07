@@ -1,0 +1,58 @@
+2025-06-07 19:08:19,801 - INFO - Loaded 3 recipients from recipients.csv
+2025-06-07 19:08:22,436 - INFO - Loaded 3 recipients from recipients.csv
+2025-06-07 19:08:22,437 - INFO - Starting bulk email send to 3 recipients
+2025-06-07 19:08:24,109 - INFO - SMTP connection established successfully
+2025-06-07 19:08:28,658 - INFO - ✓ Email sent to Ankush (ankushbhataab@gmail.com)
+2025-06-07 19:08:34,045 - INFO - ✓ Email sent to Ramnath (ramnath.mallya.h@gmail.com)
+2025-06-07 19:08:39,405 - INFO - ✓ Email sent to Niranjan (niranjankamathnk@gmail.com)
+2025-06-07 19:08:40,649 - INFO - 
+==================================================
+2025-06-07 19:08:40,649 - INFO - EMAIL SENDING COMPLETED
+2025-06-07 19:08:40,649 - INFO - Total recipients: 3
+2025-06-07 19:08:40,649 - INFO - Successfully sent: 3
+2025-06-07 19:08:40,649 - INFO - Failed: 0
+2025-06-07 19:08:40,649 - INFO - Success rate: 100.0%
+2025-06-07 19:08:40,649 - INFO - ==================================================
+2025-06-07 19:13:24,806 - INFO - Loaded 1 recipients from recipients.csv
+2025-06-07 19:13:26,615 - INFO - Loaded 1 recipients from recipients.csv
+2025-06-07 19:13:26,615 - INFO - Running in TEST MODE - sending to first 3 recipients only
+2025-06-07 19:13:26,615 - INFO - Starting bulk email send to 1 recipients
+2025-06-07 19:13:28,216 - INFO - SMTP connection established successfully
+2025-06-07 19:13:32,610 - INFO - ✓ Email sent to Ankush (ankushbhataab@gmail.com)
+2025-06-07 19:13:33,846 - INFO - 
+==================================================
+2025-06-07 19:13:33,847 - INFO - EMAIL SENDING COMPLETED
+2025-06-07 19:13:33,847 - INFO - Total recipients: 1
+2025-06-07 19:13:33,847 - INFO - Successfully sent: 1
+2025-06-07 19:13:33,847 - INFO - Failed: 0
+2025-06-07 19:13:33,847 - INFO - Success rate: 100.0%
+2025-06-07 19:13:33,847 - INFO - ==================================================
+2025-06-07 19:25:12,899 - INFO - Loaded 2 recipients from recipients.csv
+2025-06-07 19:25:15,573 - INFO - Loaded 2 recipients from recipients.csv
+2025-06-07 19:25:15,574 - INFO - Running in TEST MODE - sending to first 3 recipients only
+2025-06-07 19:25:15,574 - INFO - Starting bulk email send to 2 recipients
+2025-06-07 19:25:17,226 - INFO - SMTP connection established successfully
+2025-06-07 19:25:21,718 - INFO - ✓ Email sent to Ankush (ankushbhataab@gmail.com)
+2025-06-07 19:25:27,181 - INFO - ✓ Email sent to Apoorva (kamath.apoorva14@gmail.com)
+2025-06-07 19:25:28,427 - INFO - 
+==================================================
+2025-06-07 19:25:28,428 - INFO - EMAIL SENDING COMPLETED
+2025-06-07 19:25:28,428 - INFO - Total recipients: 2
+2025-06-07 19:25:28,428 - INFO - Successfully sent: 2
+2025-06-07 19:25:28,428 - INFO - Failed: 0
+2025-06-07 19:25:28,428 - INFO - Success rate: 100.0%
+2025-06-07 19:25:28,428 - INFO - ==================================================
+2025-06-07 19:31:52,589 - INFO - Loaded 1 recipients from recipients.csv
+2025-06-07 19:31:54,312 - INFO - Loaded 1 recipients from recipients.csv
+2025-06-07 19:31:54,312 - INFO - Running in TEST MODE - sending to first 3 recipients only
+2025-06-07 19:31:54,312 - INFO - Starting bulk email send to 1 recipients
+2025-06-07 19:31:55,967 - INFO - SMTP connection established successfully
+2025-06-07 19:32:00,506 - INFO - ✓ Email sent to Ankush (ankushbhataab@gmail.com)
+2025-06-07 19:32:01,748 - INFO - 
+==================================================
+2025-06-07 19:32:01,749 - INFO - EMAIL SENDING COMPLETED
+2025-06-07 19:32:01,749 - INFO - Total recipients: 1
+2025-06-07 19:32:01,749 - INFO - Successfully sent: 1
+2025-06-07 19:32:01,749 - INFO - Failed: 0
+2025-06-07 19:32:01,749 - INFO - Success rate: 100.0%
+2025-06-07 19:32:01,749 - INFO - ==================================================
