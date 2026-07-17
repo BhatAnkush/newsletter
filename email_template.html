@@ -1,596 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VAA Digest Newsletter</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interview Schedule - Sahyadri PeerSphere</title>
     <style>
-      /* Reset styles for email compatibility */
-      body,
-      table,
-      td,
-      p,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif !important;
-      }
-
-      body {
-        background-color: #f5f5f5 !important;
-        color: #333333 !important;
-        line-height: 1.6;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-      }
-
-      /* Main email container */
-      .email-wrapper {
-        width: 100% !important;
-        background-color: #f5f5f5 !important;
-        padding: 20px 0;
-      }
-
-      .email-container {
-        width: 100%;
-        max-width: 650px !important;
-        margin: 0 auto !important;
-        background-color: #ffffff !important;
-        border: 1px solid #e0e0e0;
-      }
-
-      /* Header styles */
-      .header {
-        background-color: #1e3a8a !important;
-        color: white !important;
-        text-align: center !important;
-        padding: 20px !important;
-      }
-
-      .header-table {
-        width: 100% !important;
-        border-collapse: collapse;
-        margin-bottom: 15px;
-      }
-
-      .header h3 {
-        color: white !important;
-        font-size: 16px !important;
-        font-weight: bold !important;
-        margin: 10px 0 5px 0 !important;
-      }
-
-      .header h5 {
-        color: white !important;
-        font-size: 12px !important;
-        font-weight: normal !important;
-        margin: 0 !important;
-      }
-
-      /* Logo styles */
-      .side-logo {
-        width: 75px;
-        height: 75px;
-        object-fit: contain;
-        border-radius: 4px;
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 4px;
-      }
-
-      .main-banner {
-        max-width: 300px !important;
-        height: auto !important;
-        border-radius: 4px;
-      }
-
-      /* Content styles */
-      .content {
-        padding: 30px 25px !important;
-      }
-
-      .greeting {
-        font-size: 18px !important;
-        color: #1e3a8a !important;
-        margin-bottom: 25px !important;
-        font-weight: bold !important;
-        border-left: 4px solid #3b82f6;
-        padding-left: 15px;
-      }
-
-      .greeting .name {
-        color: #1e40af !important;
-        font-weight: bold !important;
-      }
-
-      .intro {
-        font-size: 15px !important;
-        color: #4b5563 !important;
-        margin-bottom: 30px !important;
-        text-align: justify;
-        background-color: #f8fafc;
-        padding: 20px;
-        border-left: 4px solid #10b981;
-      }
-
-      .section {
-        margin: 35px 0 !important;
-      }
-
-      .section-title {
-        font-size: 22px !important;
-        font-weight: bold !important;
-        color: #1e3a8a !important;
-        margin-bottom: 20px !important;
-        padding-bottom: 8px;
-        border-bottom: 2px solid #3b82f6;
-      }
-
-      /* Person card styles */
-      .person-card {
-        background-color: #ffffff !important;
-        border: 1px solid #e5e7eb;
-        padding: 20px !important;
-        margin: 20px 0 !important;
-      }
-
-      .person-table {
-        width: 100% !important;
-        border-collapse: collapse;
-      }
-
-      .person-photo {
-        width: 70px !important;
-        height: 70px !important;
-        border-radius: 50%;
-        border: 3px solid #3b82f6;
-      }
-
-      .person-name {
-        font-size: 18px !important;
-        color: #1f2937 !important;
-        font-weight: bold !important;
-        margin-bottom: 5px !important;
-      }
-
-      .person-position {
-        color: #6b7280 !important;
-        font-size: 14px !important;
-        margin-bottom: 10px !important;
-        font-style: italic;
-      }
-
-      .person-bio {
-        color: #4b5563 !important;
-        font-size: 14px !important;
-        line-height: 1.6;
-        text-align: justify;
-        background-color: #f8fafc;
-        padding: 15px;
-        border-left: 3px solid #10b981;
-      }
-
-      /* Highlight box styles */
-      .highlight-box {
-        background-color: #fef7cd !important;
-        border: 2px solid #f59e0b;
-        padding: 20px !important;
-        margin: 20px 0 !important;
-      }
-
-      .highlight-box h3 {
-        color: #d97706 !important;
-        margin-top: 0 !important;
-        font-size: 18px !important;
-        font-weight: bold !important;
-      }
-
-      .highlight-box p {
-        margin-bottom: 10px !important;
-        color: #92400e !important;
-      }
-
-      /* Footer styles */
-      .footer {
-        background-color: #374151 !important;
-        color: white !important;
-        text-align: center !important;
-        padding: 25px 20px !important;
-      }
-
-      .social-section {
-        margin: 20px 0 !important;
-      }
-
-      .social-section h4 {
-        color: white !important;
-        font-size: 16px !important;
-        font-weight: bold !important;
-        margin: 0 0 15px 0 !important;
-      }
-
-      .social-table {
-        border-collapse: collapse;
-        margin: 0 auto;
-      }
-
-      .social-link {
-        color: white !important;
-        text-decoration: none !important;
-        font-weight: bold !important;
-        font-size: 14px !important;
-        padding: 8px 12px !important;
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        border-radius: 20px;
-        display: inline-block;
-        margin: 5px;
-      }
-
-      .contact-info {
-        font-size: 13px !important;
-        margin-top: 20px !important;
-        color: white !important;
-      }
-
-      .contact-info a {
-        color: #60a5fa !important;
-        text-decoration: none !important;
-        font-weight: bold !important;
-      }
-
-      .personal-message {
-        background-color: #dbeafe !important;
-        border: 2px solid #3b82f6;
-        padding: 20px !important;
-        margin: 30px 0 !important;
-        text-align: center !important;
-      }
-
-      /* Mobile responsive */
-      @media screen and (max-width: 600px) {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
         .email-container {
-          width: 100% !important;
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e1e8ed;
         }
-
+        .header {
+            background-color: #ffffff;
+            padding: 25px 30px;
+            text-align: center;
+            border-bottom: 2px solid #f0f2f5;
+        }
+        .header img {
+            max-height: 50px;
+            width: auto;
+        }
         .content {
-          padding: 20px 15px !important;
+            padding: 30px;
+            color: #333333;
+            line-height: 1.6;
         }
-
-        .main-banner {
-          max-width: 250px !important;
+        .greeting {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1a1a1a;
         }
-
-        .social-table {
-          width: 100% !important;
+        .details-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
         }
-
-        .social-table td {
-          display: block !important;
-          width: 100% !important;
-          text-align: center !important;
-          margin-bottom: 10px !important;
+        .details-item {
+            margin: 8px 0;
+            font-size: 15px;
         }
-      }
+        .details-label {
+            font-weight: 600;
+            color: #4b5563;
+        }
+        .warning-text {
+            color: #dc2626;
+            font-weight: 600;
+            background-color: #fef2f2;
+            border: 1px solid #fee2e2;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin: 15px 0 25px 0;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .cta-button {
+            display: block;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .btn {
+            background-color: #2563eb;
+            color: #ffffff !important;
+            text-decoration: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background-color 0.2s;
+            box-shadow: 0 2px 5px rgba(37, 99, 235, 0.2);
+        }
+        .footer {
+            background-color: #f8fafc;
+            padding: 20px 30px;
+            text-align: left;
+            border-top: 1px solid #e2e8f0;
+            font-size: 14px;
+            color: #64748b;
+        }
+        .footer-brand {
+            font-weight: 600;
+            color: #475569;
+        }
     </style>
-  </head>
-  <body>
-    <div class="email-wrapper">
-      <table class="email-container" cellpadding="0" cellspacing="0" border="0">
-        <!-- Header -->
-        <tr>
-          <td class="header">
-            <table
-              class="header-table"
-              cellpadding="0"
-              cellspacing="0"
-              border="0"
-            >
-              <tr>
-                <td width="80" align="center" valign="middle">
-                  <a
-                    href="https://vishwakonkani.org/"
-                    target="_blank"
-                    style="text-decoration: none"
-                  >
-                    <img
-                      src="cid:wkc_logo"
-                      alt="WKC Logo"
-                      class="side-logo"
-                      style="display: block"
-                    />
-                  </a>
-                </td>
-                <td align="center" valign="middle">
-                  <img
-                    src="cid:banner_image"
-                    alt="VAA Digest Banner"
-                    class="main-banner"
-                    style="display: block; margin: 0 auto"
-                  />
-                </td>
-                <td width="80" align="center" valign="middle">
-                  <a
-                    href="https://vkssfalumni.com/"
-                    target="_blank"
-                    style="text-decoration: none"
-                  >
-                    <img
-                      src="cid:vaa_logo"
-                      alt="VAA Logo"
-                      class="side-logo"
-                      width="50"
-                      height="50"
-                      style="display: block"
-                    />
-                  </a>
-                </td>
-              </tr>
-            </table>
-            <h3>A QUARTERLY DOSE OF ALL THINGS VAA</h3>
-            <h5>Special Issue: June 2025</h5>
-          </td>
-        </tr>
+</head>
+<body>
+
+    <div class="email-container">
+        <!-- Header / Logo -->
+        <div class="header">
+            <img src="https://links.sahyadri.edu.in/logo.svg" alt="Sahyadri Logo">
+        </div>
 
         <!-- Main Content -->
-        <tr>
-          <td class="content">
-            <!-- Personalized Greeting -->
-            <div class="greeting">Dear <span class="name">{{NAME}}</span>,</div>
-
-            <!-- Introduction -->
-            <div class="intro">
-              The last couple of years have been tough on all of our lives. The
-              silver lining is that the VAA council, along with all of your
-              support, has crossed some great milestones and pulled off some
-              wonderful events. And now, it's time for the next set of us alumni
-              to continue the legacy that started 8 years ago. VAA has recently
-              concluded its elections for the term 2022-2024 and hence we
-              delayed the April edition of VAA digest by a month to bring you
-              the updates. This special edition starts by introducing the new
-              council to all of you and ends with some wonderful updates from
-              the previous quarter!
+        <div class="content">
+            <div class="greeting">Hi {{NAME}},</div>
+            
+            <p>This is to inform you that your mock interview has been successfully scheduled. Please review the details below carefully:</p>
+            
+            <div class="details-box">
+                <div class="details-item">
+                    <span class="details-label">Interview Time:</span> {{time}}
+                </div>
+                <div class="details-item">
+                    <span class="details-label">Panel Name:</span> {{Pannel name}}
+                </div>
+                <div class="details-item">
+                    <span class="details-label">Required Profile Name:</span> {{Name}}
+                </div>
             </div>
 
-            <!-- The President Section -->
-            <div class="section">
-              <div class="section-title">The President</div>
-              <div class="person-card">
-                <table
-                  class="person-table"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td width="90" valign="top">
-                      <img
-                        src="cid:karan_photo"
-                        alt="Karan Kini"
-                        class="person-photo"
-                        width="70"
-                        height="70"
-                        style="display: block"
-                      />
-                    </td>
-                    <td valign="top">
-                      <div class="person-name">KARAN KINI</div>
-                      <div class="person-position">
-                        Costing Engineer, Capgemini Engineering, France
-                      </div>
-                      <div class="person-bio">
-                        Having been closely associated with various activities
-                        first as a scholar, and then as a volunteer alum of WKC
-                        for nearly 10 years, the role of VAA President is a
-                        scaled-up opportunity for me to fulfil my
-                        responsibilities towards WKC and the Konkani Community.
-                        Now that there are nearly 1200 of us, our potential to
-                        take WKC, VKSSF and KSHAMATA forward is limitless. I
-                        feel great happiness, pride and excitement as we ride
-                        together for the next 2 years in the TEN-X gear and inch
-                        closer to realising the Vision TVM 2030!
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
+            <p style="margin-bottom: 5px;">⚠️ <strong>Important Instruction:</strong></p>
+            <div class="warning-text">
+                Join with this Name only: "{{Name}}". Else, you will not be admitted to the session.
             </div>
 
-            <!-- The Vice Presidents Section -->
-            <div class="section">
-              <div class="section-title">The Vice Presidents</div>
+            <p>The meeting link below will be activated <strong>10 minutes prior</strong> to your scheduled interview time.</p>
 
-              <div class="person-card">
-                <table
-                  class="person-table"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td width="90" valign="top">
-                      <img
-                        src="cid:navami_photo"
-                        alt="Navami Kini"
-                        class="person-photo"
-                        width="70"
-                        height="70"
-                        style="display: block"
-                      />
-                    </td>
-                    <td valign="top">
-                      <div class="person-name">NAVAMI KINI</div>
-                      <div class="person-position">
-                        Tech Solutions Engineer, Google India, Bengaluru
-                      </div>
-                      <div class="person-bio">
-                        When I first walked into T V Raman Pai hall in the year
-                        2013, I saw the first VAA council members dazzling on
-                        the stage and I was dumbfounded by the confidence and
-                        poise they carried. Eventually, I went on to observe the
-                        zeal and hard work they put in for every event they
-                        hosted and I decided I want to be part of this amazing
-                        team. And it's finally happening. I am already excited
-                        for this term and looking forward to collaborating with
-                        all the alumni and taking VAA to newer heights.
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-
-              <div class="person-card">
-                <table
-                  class="person-table"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td width="90" valign="top">
-                      <img
-                        src="cid:samyuktha_photo"
-                        alt="Samyuktha Prabhu"
-                        class="person-photo"
-                        width="70"
-                        height="70"
-                        style="display: block"
-                      />
-                    </td>
-                    <td valign="top">
-                      <div class="person-name">SAMYUKTHA PRABHU</div>
-                      <div class="person-position">
-                        Post Graduate Student at Stuttgart University, Germany
-                      </div>
-                      <div class="person-bio">
-                        WKC and VAA have played a major role in every VKSSP
-                        scholar's life. Having known the kind of amazing work
-                        VAA has been doing to create an impact, looking at the
-                        legacy of the leaders who have been spearheading this
-                        program, I always aspired to be one among them giving
-                        back to the community in any way I can. When I saw the
-                        email of applications being open for positions forming
-                        the new council, my heart knew the absolute right thing
-                        to do. Super excited for the journey ahead!
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
+            <!-- Action Button -->
+            <div class="cta-button">
+                <a href="{{G_MEET_LINK}}" class="btn" target="_blank">Click me to join g meet link</a>
             </div>
-
-            <!-- IPRS CAMP 2022 Section -->
-            <div class="section">
-              <div class="section-title">IPRS CAMP 2022</div>
-              <div class="highlight-box">
-                <h3>Interpersonal Relationship Skills Training</h3>
-                <p>
-                  Camp for the scholars was held after a gap of 2 long years.
-                  Interpersonal Relationship Skills (IPRS) is a new module
-                  created by our experts in the field. This programme aims to
-                  help scholars to understand the concepts, especially skills
-                  and attributes associated with emotional intelligence or being
-                  able to understand and manage one's own and other's emotions.
-                </p>
-                <p>
-                  <strong
-                    >IPRS was a four-day residential camp held during KSHAMATA
-                    season from 14th April 2022 to 17th April 2022. 101 Scholars
-                    attended the camp.</strong
-                  >
-                </p>
-              </div>
-            </div>
-
-            <!-- Closing Message -->
-            <div class="highlight-box">
-              <h3>Thank You for Reading!</h3>
-              <p>
-                We hope you enjoyed reading all things VAA in this special
-                edition! Ever since a great man said, "Let no Konkani child be
-                deprived of higher education due to lack of means", WKC has been
-                supporting hundreds of scholars through financial and other
-                means every year. Vision TVM henceforth can only be further
-                fulfilled by building a strong alumni network all over the
-                world.
-              </p>
-            </div>
-
-            <!-- Personal Message -->
-            <div class="personal-message">
-              <p
-                style="
-                  margin: 0;
-                  font-size: 16px;
-                  color: #333;
-                  font-weight: bold;
-                "
-              >
-                {{NAME}}, if you wish to share your story with us, we are all
-                ears and happy to publish your work, glimpses of your student
-                life or career!
-              </p>
-            </div>
-          </td>
-        </tr>
+        </div>
 
         <!-- Footer -->
-        <tr>
-          <td class="footer">
-            <div class="social-section">
-              <h4>FOLLOW US</h4>
-              <table
-                class="social-table"
-                cellpadding="0"
-                cellspacing="0"
-                border="0"
-              >
-                <tr>
-                  <td align="center" style="padding: 5px">
-                    <a href="https://x.com/vkssfalumni" class="social-link"
-                      >Twitter</a
-                    >
-                  </td>
-                  <td align="center" style="padding: 5px">
-                    <a
-                      href="https://www.youtube.com/@vaa6164"
-                      class="social-link"
-                      >YouTube</a
-                    >
-                  </td>
-                  <td align="center" style="padding: 5px">
-                    <a
-                      href="https://www.instagram.com/vkssf_alumni/"
-                      class="social-link"
-                      >Instagram</a
-                    >
-                  </td>
-                  <td align="center" style="padding: 5px">
-                    <a
-                      href="https://www.linkedin.com/groups/10489733/"
-                      class="social-link"
-                      >LinkedIn</a
-                    >
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="contact-info">
-              Contact us at:
-              <a href="mailto:vaadigest@gmail.com">vaadigest@gmail.com</a><br />
-              <small
-                >© 2025 Vishwa Konkani Alumni Association. All rights
-                reserved.</small
-              >
-            </div>
-          </td>
-        </tr>
-      </table>
+        <div class="footer">
+            Thanks,<br>
+            <span class="footer-brand">PeerSphere Team</span><br>
+            <small style="font-size: 11px; color: #94a3b8; display: block; margin-top: 5px;">Sahyadri PeerSphere • Learning Together, Growing Together</small>
+        </div>
     </div>
-  </body>
+
+</body>
 </html>

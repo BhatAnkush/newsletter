@@ -1,2 +1,4 @@
-name,email
-xyz,xyz@example.com
+name,email,time,pannel_name,gmeet_link
+Skanda,skanda0402@gmail.com,18th July 9:30 AM - 9:50 AM,Ankush Bhat,https://meet.google.com/jrh-ncop-kpt
+Adish,adish.mentor@gmail.com,18th July 9:50 AM - 10:10 AM,Skanda,https://meet.google.com/jrh-ncop-hig
+Ankush,ankushbhataab@gmail.com,18th July 10:20 Am - 10:10:40 Am,Adish ,https://meet.google.com/jrh-ncop-hgk
